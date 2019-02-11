@@ -1,48 +1,53 @@
 <div class="header">
   <tr></tr>
-  <div class="container" style="margin-top: 18%; margin-left: 5%">
+  <div class="container" style="margin-top: 18%; margin-left: 8%">
     <div  class="col-md-6">
-       <p>Pour votre première connection :</p>
+       <h3>Pour votre première connection :</h3>
       <form #form1 ="ngForm">
         <div class="form-group">
-             nom : <input type="text" #nomAction="ngModel" class="form-control" placeholder="Nom" required name="nom" [(ngModel)]="nom">
+            <p> Nom : </p><input type="text" #nomAction="ngModel" class="form-control" placeholder="Nom" required name="nom" [(ngModel)]="nom">
               </div>
-        <div [hidden] = "nomAction.valid" style="color:orangered"> Vous devez saisir votre nom </div>
-        
+        <div [hidden] = "nomAction.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre nom </div>
+        <br>
         <div class="form-group">
-            Prénom : <input type="text" #prenomAction="ngModel" class="form-control" placeholder="Prenom" required name="prenom" [(ngModel)]="prenom">
+           <p> Prénom : </p><input type="text" #prenomAction="ngModel" class="form-control" placeholder="Prenom" required name="prenom" [(ngModel)]="prenom">
             </div>
-         <div [hidden] = "prenomAction.valid" style="color:orangered"> Vous devez saisir votre prenom SVP </div>
-    
+         <div [hidden] = "prenomAction.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre prenom SVP </div>
+            <br>
          <div class="form-group">
-           Email : <input type="email" #mailAction="ngModel" class="form-control" placeholder="Email" required name="email" [(ngModel)]="email" ngModel email="true">
+           <p>Email : </p><input type="email" #mailAction="ngModel" class="form-control" placeholder="Email" required name="email" [(ngModel)]="email" ngModel email="true">
            </div>
-        <div [hidden] = "mailAction.valid" style="color:orangered"> Vous devez saisir votre Email SVP </div>
-   
+           <br>
+        <div [hidden] = "mailAction.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre Email SVP </div>
+           <br>
         <div class="form-group">
-         mot de passe : <input type="password" #passwordAction="ngModel" class="form-control" placeholder="Mot de passe" required name="password" [(ngModel)]="password">
+         <p>Mot de passe :</p> <input type="password" #passwordAction="ngModel" class="form-control" placeholder="Mot de passe" required name="password" [(ngModel)]="password">
          </div>
-         
-      <div [hidden] = "passwordAction.valid" style="color:orangered"> Vous devez saisir votre mot de passe  </div>
-   
-          <button type="submit" [disabled]="!form1.form.valid" class="btn btn-primary btn-block">Valider</button>
+      <div [hidden] = "passwordAction.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre mot de passe  </div>
+      <br>    
+      <button type="submit" [disabled]="!form1.form.valid" class="btn btn-primary btn-block">Valider</button>
       </form>
    </div>
    
      <div  class="col-md-6" >
-       <p>Pour connecter a votre espace client :</p>
+       <h3>Pour connecter a votre espace client :</h3>
       <form #form2 ="ngForm">
         <div class="form-group2">
-          Email : <input type="email" #mail2Action="ngModel" class="form-control" placeholder="Email" required name="emailconnec" [(ngModel)]="emailconnec" ngModel email="true">
+         <p> Email : </p><input type="email" #mail2Action="ngModel" class="form-control" placeholder="Email" required name="emailconnec" [(ngModel)]="emailconnec" ngModel email="true">
           </div>
-         <div [hidden] = "mail2Action.valid" style="color:orangered"> Vous devez saisir votre Email SVP </div>
-   
+          <br>
+         <div 
+         [hidden] = "mail2Action.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre Email SVP 
+        </div>
+        <br>
          <div class="form-group">
-          mot de passe : <input type="password" #password2Action="ngModel" class="form-control" placeholder="Mot de passe" required name="passwordconnec" [(ngModel)]="passwordconnecg">
+         <p> Mot de passe :</p> <input type="password" #password2Action="ngModel" class="form-control" placeholder="Mot de passe" required name="passwordconnec" [(ngModel)]="passwordconnecg">
          </div>
-        
-        <div [hidden] = "password2Action.valid" style="color:orangered"> Vous devez saisir votre mot de passe  </div>
-   
+         <br>
+        <div
+         [hidden] = "password2Action.valid" style="color:rgb(240, 20, 148)"> Vous devez saisir votre mot de passe 
+         </div>  
+         <br>
          <button type="submit" [disabled]="!form2.form.valid" class="btn btn-primary btn-block">Valider</button>
        </form>
        </div>
