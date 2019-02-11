@@ -1,79 +1,10 @@
 
-* {
-  box-sizing: border-box;
+.header-image
+{
+    background-image: url("https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-color: #fff;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
-#p {
-    margin: auto;
-    text-align: center;
-    padding:20px;
-
-
-}
-.row
-  {background-image: url("https://cdn.pixabay.com/photo/2016/11/22/10/47/girl-1848947_1280.jpg");
-  background-origin:padding-box;
-  background-size: cover;
-  position: relative;
-  background-origin: content-box;
-  background-repeat: no-repeat;
-  border-width: thin;
-  margin:0%;
-    background-size:100%;
-    width: 100% ;
-    padding:50px ;
-    height: 100%;
-    
-
-}
-@keyframes defile {
-    from {background-position: 0px 0px;}
-    to {background-position: 1920px 0px;}
-    }
-.header {
-    background-color:white;
-    padding: 30px;
-    text-align: center;
-    font-size: 40px;}
-  #column {
-    float: center;
-    width:50%;
-    margin: auto;
-    margin-left: 50px;
-    height: 250px; 
-    text-align: center;
-    border-radius: 50px;
-    box-shadow: 6px 6px 6px black;
-    font-family: Police;
-    font-style: italic solid;
-    font-weight: bold; 
-    padding:20px;
-    color:white;
-    
-    
-  } 
-    
- 
-    
-
-  .row:after {
-    content: "";
-    clear: both;
-    margin-left: 10px;
-    width: 33.33%;
-    padding: 25px;
-
-}
-
-H2 {
-    color:palevioletred;
-    text-align: center;
-    word-spacing: -5px; 
-    font-family: Police;
-    font-style: italic; 
-    
-    }
-    
-	
-
- 
-  
